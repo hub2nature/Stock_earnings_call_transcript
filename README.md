@@ -18,7 +18,7 @@ This project contains a 3-stage sentiment scoring pipeline for earnings call tra
   - `grpo_rlaif_train.py` (train)
   - `grpo_rlaif_infer.py` (inference)
 
-## 🚀 Run Order
+## Run Order
 
 ```bash
 python "NLP II - Sentiment Score.py"
