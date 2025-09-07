@@ -1,18 +1,18 @@
-# 📊 Financial Sentiment Analysis Pipeline
+# Financial Sentiment Analysis Pipeline
 
 This project contains a 3-stage sentiment scoring pipeline for earnings call transcripts:
 
-## 1. 🧠 NLP-based Scoring (`NLP II`)
+## 1. NLP-based Scoring (`NLP II`)
 - Keyword-based sentiment using Loughran-McDonald dictionary.
 - Backtest Results:
   - **Long-only:** Return: 4.36x | Long Hit Rate: 59.1%
   - **Long-short:** Return: 0.98x | Long: 59.1% | Short: 42.0%
 
-## 2. 🤖 FinBERT-based Scoring
+## 2. FinBERT-based Scoring
 - Uses `yiyanghkust/finbert-tone` model.
 - Captures sentence-level financial tone (positive/neutral/negative).
 
-## 3. 🧪 GRPO Distillation (Optional)
+## 3. GRPO Distillation (Optional)
 - FinBERT = teacher, distilled model = student (no RL or second LLM).
 - Scripts:
   - `grpo_rlaif_train.py` (train)
